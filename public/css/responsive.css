@@ -1,0 +1,459 @@
+@media only screen and (min-width: 770px) and (max-width: 991px) {
+    .schedule {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        padding: 70px 0;
+        border-bottom:1px solid #eee;
+    }
+    .schedule .schedule-inner {
+        transform: none;
+    }
+    .schedule .single-schedule.last{
+        margin-top:30px;
+    }
+    .carousel-caption {
+        top: 30%;
+    }
+    .carousel-inner .carousel-item a img {
+        
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel-caption p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .button {
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+
+    .icon-size {
+        font-size: 20px;
+    }
+    
+    .Feautes.index2 {
+        padding-top: 70px;
+    }
+    .Feautes .single-features::before {
+        display:none;
+    }
+    .Feautes .single-features {
+        text-align: center;
+        position: relative;
+        padding: 10px 155px;
+        margin: 10px 0;
+    }
+    .section{
+        padding:70px 0px;
+    }
+    .section-title {
+        margin-bottom: 35px;
+        padding: 0px 80px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+    .section-title p {
+        font-size: 13px;
+    }
+    .fun-facts.section{
+        padding:70px 0;
+    }
+    .fun-facts .single-fun {
+        margin: 20px 0;
+    }
+    .why-choose .choose-right {
+        height: 350px;
+        margin-top: 30px;
+    }
+    .call-action .content {
+        padding: 0;
+        padding: 70px 0;
+    }
+    .call-action .content h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .blog .single-news {
+        margin: 15px 0;
+    }
+
+    .iframe-maps{
+        width: 600px;
+    }
+    .footer .single-footer {
+        margin: 20px 0;
+    }
+    .footer .single-footer h2 {
+        padding-bottom: 20px;
+    }
+    .footer .footer-top {
+        padding: 65px 0px;
+    }
+    .breadcrumbs {
+        padding: 60px 0;
+    }
+    .breadcrumbs h2 {
+        font-size: 32px;
+        font-weight:600;
+    }
+    .breadcrumbs .bread-list {
+        margin-top: 5px;
+    }
+    .breadcrumbs ul li a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .news-single .single-main {
+        margin-top: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 770px) {
+    .schedule {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        padding: 50px 0;
+        border-bottom:1px solid #eee;
+    }
+    .schedule .schedule-inner {
+        transform: none;
+    }
+    .schedule .single-schedule{
+        margin:15px 0;
+    }
+    .carousel-caption h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .carousel-caption {
+        top: 20%;
+    }
+    .carousel-inner .carousel-item a img {
+        height: 350px;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .button {
+        padding: 6px 6px;
+        font-size: 10px;
+    }
+    .icon-size {
+        font-size: 14px;
+    }
+
+    .Feautes.index2 {
+        padding-top: 50px;
+    }
+    .Feautes .single-features .signle-icon i {
+        font-size: 42px;
+        left: 50%;
+        margin-left: -40px;
+        height:80px;
+        width: 80px;
+        line-height: 80px;
+    }
+    .Feautes .single-features::before {
+        display:none;
+    }
+    .Feautes .single-features {
+        text-align: center;
+        position: relative;
+        padding:0px;
+        margin: 15px 0;
+    }
+    .Feautes .single-features h3 {
+        padding-top: 105px;
+        font-size: 20px;
+    }
+    .section{
+        padding:50px 0px;
+    }
+    .section-title {
+        margin-bottom: 30px;
+        padding: 0px 20px;
+    }
+    .section-title h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .section-title p {
+        font-size: 13px;
+    }
+    .fun-facts.section{
+        padding:70px 0;
+    }
+    .fun-facts .single-fun{
+        margin:0;
+        margin:15px 0;
+        position:relative;
+    }
+    .fun-facts .single-fun {
+        margin: 35px 0;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .fun-facts .single-fun i {
+        left: 50%;
+        margin-left: -35px;
+        top:0;
+        position:absolute;
+    }
+    .fun-facts .single-fun .content {
+        padding:0;
+    }
+    .why-choose .choose-right {
+        height: 350px;
+        margin-top: 30px;
+    }
+    .call-action .content {
+        padding: 0;
+        padding: 70px 0;
+    }
+    .call-action .content h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .blog .single-news {
+        margin: 15px 0;
+    } 
+    .footer .single-footer {
+        margin: 15px 0;
+    }
+    .footer .single-footer h2 {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .footer .footer-top {
+        padding: 50px 0px 60px 0;
+    }
+    .footer .single-footer.f-link ul {
+        margin-bottom: 12px;
+    }
+    .footer .single-footer.f-link ul li a{
+        display:inline-block;
+    }
+    .footer .copyright {
+        padding: 20px 0;
+    }
+    .header-top .wrapper {
+        margin-bottom: 12px;
+    }
+    .breadcrumbs {
+        padding: 60px 0;
+    }
+    .breadcrumbs h2 {
+        font-size: 32px;
+        font-weight:600;
+    }
+    .breadcrumbs .bread-list {
+        margin-top:10px;
+    }
+    .breadcrumbs ul li{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .breadcrumbs ul li a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .news-single .single-main {
+        margin-top:0px;
+    }
+    .news-single .single-main {
+        padding: 15px;
+    }
+    .news-single .news-title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .news-single .news-title a{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .news-single .meta-right {
+       
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .news-single .image-gallery .single-image {
+        margin: 10px 0;
+    }
+    .news-single .image-gallery {
+        margin-bottom: 10px;
+    }
+    .news-single .social-share li {
+        float: left;
+        display: inline-block;
+        margin: 5px;
+    }
+    .news-single .prev-next {
+        float: none;
+        text-align: center;
+        display: inline-block;
+    }
+    .news-single .prev-next li {
+        margin-top: 10px;
+    }
+    .news-single .single-comments.left .main {
+        margin-left:0px;
+    }
+    .news-single .single-comments .main {
+        padding-left: 100px;
+        position: relative;
+        margin-left: 100px;
+        margin: 0;
+    }
+    .news-single .single-comments .body {
+        float: none;
+        width: 100%;
+    }
+    .news-single .single-comments img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .news-single .blog-comments {
+        padding: 15px;
+    }
+    .news-single .comments-form {
+        padding: 15px;
+    }
+    .main-sidebar .single-widget {
+        padding: 20px;
+    }
+}
+    
+
+@media only screen and (max-width: 450px) {
+    .schedule {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        padding: 50px 0;
+        border-bottom:1px solid #eee;
+    }
+    .schedule .schedule-inner {
+        transform: none;
+    }
+    .schedule .single-schedule{
+        margin:15px 0;
+    }
+    .carousel-inner .carousel-item a img {
+        height: 350px;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .Feautes .single-features .signle-icon i {
+        font-size: 42px;
+        left: 50%;
+        margin-left: -40px;
+        height:80px;
+        width: 80px;
+        line-height: 80px;
+    }
+    .Feautes .single-features::before {
+        display:none;
+    }
+    .Feautes .single-features {
+        text-align: center;
+        position: relative;
+        padding:0px;
+        margin: 15px 0;
+    }
+    .Feautes .single-features h3 {
+        padding-top: 105px;
+        font-size: 20px;
+    }
+    .section{
+        padding:50px 0px;
+    }
+    .section-title {
+        margin-bottom: 30px;
+        padding: 0px 20px;
+    }
+    .section-title h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .section-title p {
+        font-size: 13px;
+    }
+    .fun-facts.section{
+        padding:70px 0;
+    }
+    .fun-facts .single-fun{
+        margin:0;
+        margin:15px 0;
+        position:relative;
+    }
+    .fun-facts .single-fun {
+        margin: 35px 0;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .fun-facts .single-fun i {
+        left: 50%;
+        margin-left: -35px;
+        top:0;
+        position:absolute;
+    }
+    .fun-facts .single-fun .content {
+        padding:0;
+    }
+    .why-choose .choose-right {
+        height: 350px;
+        margin-top: 30px;
+    }
+    .call-action .content {
+        padding: 0;
+        padding: 70px 0;
+    }
+    .call-action .content h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .blog .single-news {
+        margin: 15px 0;
+    }
+    .footer .single-footer {
+	margin: 20px 0;
+    }
+    .footer .single-footer h2 {
+        padding-bottom: 20px;
+    }
+    .footer .footer-top {
+        padding: 65px 0px;
+    }
+    .news-single .meta-right {
+      
+        display: inline-block;
+        margin-left: 0px;
+    }
+    }
+
