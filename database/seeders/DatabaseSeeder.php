@@ -25,6 +25,13 @@ class DatabaseSeeder extends Seeder
             LogoSeeder::class,
             FooterSeeder::class,
             TentangSeeder::class,
+
+            ProgramSeeder::class,
+            DataTahunanSeeder::class,
+            ProfileSeeder::class,
+            ContentSeeder::class,
+            TeamSeeder::class,
+            MitraSeeder::class,
         ]);
     }
 }

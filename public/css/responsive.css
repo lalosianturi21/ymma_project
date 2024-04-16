@@ -73,6 +73,10 @@
     .fun-facts .single-fun {
         margin: 20px 0;
     }
+
+    .fun-facts .card-position {
+        margin-left: 0;
+    }
     .why-choose .choose-right {
         height: 350px;
         margin-top: 30px;
@@ -119,6 +123,14 @@
     .news-single .single-main {
         margin-top: 0;
     }
+
+    .text-vision{
+        margin-top: 60px;
+    }
+
+    .mission {
+        margin-top: 50px;
+    }
     
 }
 
@@ -128,7 +140,7 @@
         margin: 0;
         padding: 0;
         height: auto;
-        padding: 50px 0;
+        padding: 50px 20px;
         border-bottom:1px solid #eee;
     }
     .schedule .schedule-inner {
@@ -149,6 +161,14 @@
         top: 20%;
     }
     .carousel-inner .carousel-item a img {
+        height: 350px;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    img.d-block.w-100.img-width {
         height: 350px;
         background-size: cover;
         object-fit: cover;
@@ -222,6 +242,9 @@
     }
     .fun-facts .single-fun .content {
         padding:0;
+    }
+    .fun-facts .card-position {
+        margin-left: 0;
     }
     .why-choose .choose-right {
         height: 350px;
@@ -344,6 +367,34 @@
     .main-sidebar .single-widget {
         padding: 20px;
     }
+
+    .timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+    
+    .text-vision{
+        margin-top: 60px;
+    }
+    .mission {
+        margin-top: 50px;
+    }
+    .scroll-to-top {
+        bottom: 6rem;
+    }
+    a.scroll-to-top.whatsapp {
+        bottom: 10rem;
+    }
 }
     
 
@@ -353,7 +404,7 @@
         margin: 0;
         padding: 0;
         height: auto;
-        padding: 50px 0;
+        padding: 50px 20px;
         border-bottom:1px solid #eee;
     }
     .schedule .schedule-inner {
@@ -369,6 +420,15 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    img.d-block.w-100.img-width {
+        height: 350px;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
     .Feautes .single-features .signle-icon i {
         font-size: 42px;
         left: 50%;
@@ -455,5 +515,26 @@
         display: inline-block;
         margin-left: 0px;
     }
+
+    .contact-us img {
+        height: 400px;
+        background-position: center;
     }
+
+    .text-vision{
+        margin-top: 60px;
+    }
+
+    .mission {
+        margin-top: 50px;
+    }
+    .scroll-to-top {
+        bottom: 6rem;
+    }
+    a.scroll-to-top.whatsapp {
+        bottom: 10rem;
+    }
+    }
+
+    
 

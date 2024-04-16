@@ -17,16 +17,27 @@ class BannerSeeder extends Seeder
     {
         Banner::create([
             'sampul' => 'banner1.jpg',
-            'judul' => 'Tips dan Trik Membeli Laptop Secara Online',
-            'konten' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque, pariatur quod et consectetur quasi quas eum quidem, placeat illo, similique optio deserunt nemo iste eos omnis. In, veritatis corrupti?',
-            'slug' => Str::slug('Tips dan Trik Membeli Laptop Secara Online')
+            'judul' => 'Temukan TB, Obati Sampai Sembuh (TOSS TB)',
+            'konten' => 'Yayasan Mentari Meraki Asa didirikan atas kesepahaman bersama melalui penggabungan beberapa perwakilan pelaksana program penanggulangan TBC berbasis komunitas.',
+            'slug' => Str::slug('Temukan TB, Obati Sampai Sembuh (TOSS TB)')
         ]);
 
         Banner::create([
             'sampul' => 'banner2.jpg',
-            'judul' => 'Cara mengatasi error didalam belajar programing',
-            'konten' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque, pariatur quod et consectetur quasi quas eum quidem, placeat illo, similique optio deserunt nemo iste eos omnis. In, veritatis corrupti?',
-            'slug' => Str::slug('Cara mengatasi error didalam belajar programing')
+            'judul' => 'Visi Program',
+            'konten' => 'Terwujudnya Masyarakat Sipil Indonesia yang Sadar Pembangunan dan Berperadaban Global.',
+            'slug' => Str::slug('Visi Program')
+        ]);
+
+        Banner::create([
+            'sampul' => 'banner3.jpg',
+            'judul' => 'Misi Program',
+            'konten' => 'Mendorong kesadaran masyarakat sipil Indonesia dalam keterlibatan terhadap isu-isu
+            strategis pembangunan berkelanjutan melalui peningkatan kompetensi sumber daya 
+            manusia, kolektif-kolegial organisasi, dan kapabilitas dalam pemberdayaan masyarakat 
+            untuk mewujudkan masyarakat sipil Indonesia yang sadar pembangunan dan 
+            berperadaban Global seluas-luasnya.',
+            'slug' => Str::slug('Misi Program')
         ]);
     }
 }

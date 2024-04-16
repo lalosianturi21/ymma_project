@@ -1,5 +1,15 @@
 @extends('artikel/template/app')
+
+@isset($kategori_dipilih)
+    @section('title')
+        Kategori : {{$kategori_dipilih->nama}}
+    @endsection
+    @section('kategori', 'active')
+@endisset
+
+
 @section('title', 'Artikel')
+
 
 @section('content')
 

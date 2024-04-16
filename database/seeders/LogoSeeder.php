@@ -15,7 +15,7 @@ class LogoSeeder extends Seeder
     public function run()
     {
         Logo::create([
-            'gambar' => 'logo.png'
+            'gambar' => 'ss.png'
         ]);
     }
 }

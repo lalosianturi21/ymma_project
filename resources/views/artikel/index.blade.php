@@ -1,5 +1,6 @@
 @extends('artikel/template/app')
 
+
 @isset($tag_dipilih)
      @section('title')
         Tag : {{$tag_dipilih->nama}}
@@ -35,8 +36,10 @@
                         <a href="/artikel-banner/{{$row->slug}}"><img src="/upload/banner/{{$row->sampul}}"  class="d-block w-100 img-size" alt="..."></a>
                         <div class="carousel-caption ">
                             <h3 class="mb-3">{{$row->judul}}</h3>
+							<div class="box-konten">
                             <p>{!!$row->konten!!}</p>
-                            <a href="#" class="button btn-call ">Hubungi sekarang  <ion-icon name="logo-whatsapp" class="icon-size"></ion-icon></a>
+							</div>
+                            <!-- <a href="#" class="button btn-call ">Hubungi sekarang  <ion-icon name="logo-whatsapp" class="icon-size"></ion-icon></a> -->
                         </div>
                     </div>
                 @endforeach
@@ -53,75 +56,78 @@
    @endisset
 
 
+
 <!-- Start Schedule Area -->
 <section class="schedule">
 			<div class="container">
 				<div class="schedule-inner">
 					<div class="row">
+						
 						<div class="col-lg-4 col-md-6 col-12 ">
 							<!-- single-schedule -->
-							<div class="single-schedule first">
+							<div class="single-schedule first" style="background-image: url('/upload/assets/seputar.jpeg'); background-size: cover; ">
 								<div class="inner">
-									<div class="icon">
-										<i class="fa fa-ambulance"></i>
-									</div>
-									<div class="single-content">
-										<span>Lorem Amet</span>
-										<h4>Emergency Cases</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									<div class="single-content" >
+										<div class="content-title">
+										<h4>Seputar TB</h4>
+										</div>
+										<div class="learn mt-5" >
+										<a href="#">Selengkapnya <i class="fa fa-long-arrow-right"></i></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-12">
+
+						<div class="col-lg-4 col-md-6 col-12 ">
 							<!-- single-schedule -->
-							<div class="single-schedule middle">
+							<div class="single-schedule first" style="background-image: url('/upload/assets/toss.jpg'); background-size: cover; ">
 								<div class="inner">
-									<div class="icon">
-                                    <i class="fa fa-ambulance"></i>
-									</div>
-									<div class="single-content">
-										<span>Fusce Porttitor</span>
-										<h4>Doctors Timetable</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									<div class="single-content" >
+										<div class="content-title">
+										<h4>TOSS TB</h4>
+										</div>
+										<div class="learn mt-5" >
+										<a href="#">Selengkapnya <i class="fa fa-long-arrow-right"></i></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-12 col-12">
+
+						<div class="col-lg-4 col-md-6 col-12 ">
 							<!-- single-schedule -->
-							<div class="single-schedule last">
-                            <div class="inner">
-									<div class="icon">
-                                    <i class="fa fa-ambulance"></i>
-									</div>
-									<div class="single-content">
-										<span>Fusce Porttitor</span>
-										<h4>Doctors Timetable</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+							<div class="single-schedule first" style="background-image: url('/upload/assets/penyintas.jpg'); background-size: cover; ">
+								<div class="inner">
+									<div class="single-content" >
+										<div class="content-title">
+										<h4>Penyintas TB</h4>
+										</div>
+										<div class="learn mt-5" >
+										<a href="#">Selengkapnya <i class="fa fa-long-arrow-right"></i></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
 		</section>
-		<!--/End Start schedule Area -->
 
+		
 
+		@isset($program)
         <!-- Start Feautes -->
 		<section class="Feautes section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Dukungan dan Bantuan Untuk Seluruh Masyarakat</h2>
+							<h2>{{$program->heading}}</h2>
 							<img src="/upload/assets/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>{{$program->sub_heading}}</p>
 						</div>
 					</div>
 				</div>
@@ -130,10 +136,10 @@
 						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
-                            <i class="fa-solid fa-truck-medical"></i>
+                            <i class="{{$program->icon_program1}}"></i>
 							</div>
-							<h3>Emergency Help</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<h3>{{$program->title1}}</h3>
+							<p>{{$program->subtitle1}}</p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -141,10 +147,10 @@
 						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
-                            <i class="fa-solid fa-mortar-pestle"></i>
+                            <i class="{{$program->icon_program2}}"></i>
 							</div>
-							<h3>Enriched Pharmecy</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<h3>{{$program->title2}}</h3>
+							<p>{{$program->subtitle2}}</p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -152,10 +158,10 @@
 						<!-- Start Single features -->
 						<div class="single-features last">
 							<div class="signle-icon">
-                            <i class="fa-solid fa-stethoscope"></i>
+                            <i class="{{$program->icon_program3}}"></i>
 							</div>
-							<h3>Medical Treatment</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<h3>{{$program->title3}}</h3>
+							<p>{{$program->subtitle3}}</p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -163,62 +169,62 @@
 			</div>
 		</section>
 		<!--/ End Feautes -->
+		@endisset
 
+		@isset($datatahunan)
+		<div class="slider">
+		@foreach ($datatahunan as $row)
+		<!-- tahun 2021 -->
         <div id="fun-facts" class="fun-facts section overlays">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
+			<h2 class="text-center text-header">Data Tahun {{$row->tahun}}</h2>
+				<div class="row card-position">
+					<div class="col-lg-4 col-md-6">
 						<div class="single-fun">
-						<i class="fa-solid fa-hospital"></i>
+						<i class="{{ $row->icon1 }}"></i>
 						<div class="content">
-							<span class="counter">3468</span>
-							<p>Hospital Rooms</p>
+							<span class="counter">{{$row->total_data1}}</span>
+							<p>{{$row->nama_data1}}</p>
 						</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-4 col-md-6">
 						<div class="single-fun">
-						<i class="fa-solid fa-user-doctor"></i>
+						<i class="{{ $row->icon2 }}"></i>
 						<div class="content">
-							<span class="counter">3468</span>
-							<p>Specialist Doctors</p>
+							<span class="counter">{{$row->total_data2}}</span>
+							<p>{{$row->nama_data2}}</p>
 						</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-4 col-md-6 col-12">
 						<div class="single-fun">
-						<i class="fa-solid fa-bed"></i>
+						<i class="{{ $row->icon3 }}"></i>
 						<div class="content">
-							<span class="counter">3468</span>
-							<p>Happy Patients</p>
+							<span class="counter">{{$row->total_data3}}</span>
+							<p>{{$row->nama_data3}}</p>
 						</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Start Single Fun -->
-						<div class="single-fun">
-						<i class="fa-solid fa-calendar-days"></i>
-							<div class="content">
-								<span class="counter">32</span>
-								<p>Years of Experience</p>
-							</div>
-						</div>
-						<!-- End Single Fun -->
 					</div>
 				</div>
 			</div>
 		</div>
+		@endforeach
+		</div>
+		@endisset
 
 
+
+		@isset($profile)
 		<!-- Start Why choose -->
-		<section class="why-choose section" >
+		<section class="why-choose section" id="profile" >
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Profile Yayasan Mentari Meraki Asa Sumatera Utara</h2>
+							<h2> {{ $profile->heading }}</h2>
 							<img src="/upload/assets/section-img.png" alt="#">
-							<p>Yayasan Mentari Meraki Asa berdedikasi untuk menciptakan dampak positif dalam masyarakat Sumatera Utara.</p>
+							<p>{{ $profile->sub_heading }}</p>
 						</div>
 					</div>
 				</div>
@@ -226,28 +232,23 @@
 					<div class="col-lg-6 col-12">
 						<!-- Start Choose Left -->
 						<div class="choose-left">
-							<h3>Tentang Kami</h3>
-							<p>Yayasan Mentari Meraki Asa didirikan atas kesepahaman bersama melalui penggabungan beberapa perwakilan pelaksana program penanggulangan TBC berbasis komunitas.</p>
-							<p>Sejak tahun 2016 pada tingkat provinsi dan kota/kabupaten, melalui 
-								SR-SSR TBC-HIV Care Aisyiyah Sumatera Utara, para pengurus Yayasan i
-								ni sekaligus pelaksana program, sudah menjalankan berbagai program 
-								berbasis komunitas masyarakat yang bergerak pada isu advokasi sosial, 
-								kesehatan masyarakat, pendidikan non formal, dan pemberdayaan 
-								masyarakat desa dengan kategori berhasil berdasarkan standar mitra.
+							<h3>{{ $profile->nama }}</h3>
+							<p>{!! $profile->description1 !!}</p>
+							<p>{!! $profile->description2 !!}
 							</p>
 							<div class="row">
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+										<li><i class="fa fa-caret-right"></i>{{ $profile->program1 }}</li>
+										<li><i class="fa fa-caret-right"></i>{{ $profile->program2 }}</li>
+										<li><i class="fa fa-caret-right"></i>{{ $profile->program3 }}</li>
 									</ul>
 								</div>
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+										<li><i class="fa fa-caret-right"></i>{{ $profile->program4 }}</li>
+										<li><i class="fa fa-caret-right"></i>{{ $profile->program5 }}</li>
+										<li><i class="fa fa-caret-right"></i>{{ $profile->program6 }}</li>
 									</ul>
 								</div>
 							</div>
@@ -267,7 +268,7 @@
 									</div>
 								</div>
 								<!--/ End Video Animation -->
-								<a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+								<a href="{{ $profile->link_yt }}" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
 							</div>
 						</div>
 						<!-- End Choose Rights -->
@@ -276,17 +277,19 @@
 			</div>
 		</section>
 		<!--/ End Why choose -->
+		@endisset
 
+		@isset($content)
 <!-- Start Call to action -->
 <section class="call-action overlays" data-stellar-background-ratio="0.5">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">
 						<div class="content">
-							<h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
+							<h2>{{$content->title}}</h2>
+							<p>{{$content->sub_title}}</p>
 							<div class="button">
-								<a href="#" class="btn">Contact Now</a>
+								<a href="{{$content->link_button}}" class="btn">{{$content->nama_button}}</a>
 							</div>
 						</div>
 					</div>
@@ -294,7 +297,9 @@
 			</div>
 		</section>
 		<!--/ End Call to action -->
+		@endisset
 
+		@isset($team)
 		<!-- Start portfolio -->
 		<section class="portfolio section" >
 			<div class="container">
@@ -304,7 +309,7 @@
 							<h2>Tim Yayasan Mentari Meraki Asa Sumatera Utara</h2>
 							<img src="/upload/assets/section-img.png" alt="#">
 							<p>Tim Yayasan Mentari Meraki Asa Sumatera Utara, bertekad untuk menginspirasi 
-dan membawa perubahan positif bagi masyarakat.</p>
+								dan membawa perubahan positif bagi masyarakat.</p>
 						</div>
 					</div>
 				</div>
@@ -313,85 +318,40 @@ dan membawa perubahan positif bagi masyarakat.</p>
 				<div class="row">
 					<div class="col-lg-12 col-12">
 						<div class="owl-carousel portfolio-slider">
+						@foreach ($team as $row)
 							<div class="single-pf">
-								<img src="/upload/banner/pf1.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="/upload/team/{{$row->gambar}}" alt="#">
+								<a href="/artikel-team/{{$row->slug}}" class="btn">View Details</a>
 							</div>
-							<div class="single-pf">
-								<img src="/upload/banner/pf2.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="/upload/banner/pf3.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="/upload/banner/pf4.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="/upload/banner/pf1.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="/upload/banner/pf2.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="/upload/banner/pf3.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="/upload/banner/pf4.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
+							@endforeach
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--/ End portfolio -->
+		@endisset
 		
 
+		@isset($mitra)
 		<!-- Start clients -->
 		<div class="clients overlays">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">
 						<div class="owl-carousel clients-slider">
+						@foreach ($mitra as $row)
 							<div class="single-clients">
-								<img src="/upload/banner/client1.png" alt="#">
+								<img src="/upload/mitra/{{$row->gambar}}" alt="{{$row->nama_mitra}}">
 							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client2.png" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client3.png" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client4.png" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client1.png" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client2.png" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client3.png" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client4.png" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="/upload/banner/client1.png" alt="#">
-							</div>
+							@endforeach
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--/Ens clients -->
+		@endisset
 
 
 		
@@ -460,8 +420,11 @@ dan membawa perubahan positif bagi masyarakat.</p>
 			</div>
 		</div>
 		</section>
-		<!--/ End Why choose -->
 		
+		
+
+
+		<!--/ End Why choose -->
     <!-- @isset($rekomendasi)
         @if ($rekomendasi->isNotEmpty())
         <div class="container">

@@ -11,7 +11,8 @@ const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
 /**
  * navbar toggle
  */
-
+const searchBtn = document.getElementById('searchBtn');
+const searchInputContainer = document.getElementById('searchInputContainer');
 const navbar = document.querySelector("[data-navbar]");
 const overlay = document.querySelector("[data-overlay]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
@@ -78,4 +79,18 @@ window.addEventListener('load', async () => {
       duration: 800,
       once: true
   });
+});
+
+searchBtn.addEventListener('click', function() {
+  // Tampilkan container input pencarian
+  searchInputContainer.style.display = 'block';
+});
+
+// Ambil elemen tombol Close
+const searchCloseBtn = document.getElementById('searchCloseBtn');
+
+// Tambahkan event listener untuk klik pada tombol Close
+searchCloseBtn.addEventListener('click', function() {
+  // Sembunyikan container input pencarian
+  searchInputContainer.style.display = 'none';
 });

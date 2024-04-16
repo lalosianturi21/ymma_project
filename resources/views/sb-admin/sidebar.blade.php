@@ -37,6 +37,39 @@
         </div>
       </li>
 
+       <!-- Nav Item - Pages Collapse Menu -->
+       <li class="nav-item @yield('beranda-active')">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#beranda" aria-expanded="true" aria-controls="beranda">
+           <i class="fas fa-fw fa-folder"></i>
+          <span>Beranda</span>
+        </a>
+        <div id="beranda" class="collapse @yield('beranda')" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item @yield('program')" href="/program">Program</a>
+            <a class="collapse-item @yield('datatahunan')" href="/datatahunan">Data Tahunan</a>
+            <a class="collapse-item @yield('profile')" href="/profile">Profile</a>
+            <a class="collapse-item @yield('konten')" href="/content">Content</a>
+            <a class="collapse-item @yield('team')" href="/team">Team</a>
+            <a class="collapse-item @yield('mitra')" href="/mitra">Mitra</a>
+          </div>
+        </div>
+      </li>
+
+       <!-- Nav Item - Pages Collapse Menu -->
+       <li class="nav-item @yield('program-active')">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#program" aria-expanded="true" aria-controls="program">
+           <i class="fas fa-fw fa-folder"></i>
+          <span>Program</span>
+        </a>
+        <div id="program" class="collapse @yield('program')" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item @yield('keagamaan')" href="/keagamaan">Keagamaan</a>
+            <a class="collapse-item @yield('kemanusiaan')" href="/kemanusiaan">Kemanusiaan</a>
+          </div>
+        </div>
+      </li>
+
+
       @role('admin')
           <!-- Nav Item - Pages Collapse Menu -->
           <li class="nav-item @yield('user-active')">

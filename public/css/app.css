@@ -4449,6 +4449,8 @@ input[type=button].btn-block {
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+  background-position: center;
+  object-fit: cover;
 }
 
 .card-img,

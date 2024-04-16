@@ -90,33 +90,33 @@
             <ul class="navbars-list">
 
             <li class="dropdown">
-              <a href="/beranda" class="navbars-link @yield('home')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Beranda </a>
+              <a href="/" class="navbars-link @yield('home')">Beranda </a>
             </li>
 
             <li class="dropdown">
-              <a href="/tentang" class="navbars-link @yield('tentang')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang <i class="fas fa-caret-down"></i></a>
+              <a href="/tentang" class="navbars-link @yield('tentang') dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang </a>
               <ul class="dropdown-menu">
-                  <li><a href="/">Profile</a></li>
-                  <li><a href="#">Sejarah</a></li>
-                  <li><a href="#">Visi & Misi</a></li>
-                  <li><a href="#">Struktur</a></li>
-                  <li><a href="#">Cabang</a></li>
+                  <li><a href="/artikel-profile">Profile</a></li>
+                  <li><a href="/artikel-history">Sejarah</a></li>
+                  <li><a href="/artikel-vision">Visi & Misi</a></li>
+                  <li><a href="/artikel-struktur">Struktur</a></li>
+                  <li><a href="/artikel-cabang">Cabang</a></li>
               </ul>
               </li>
 
               <li class="dropdown">
-              <a href="/program" class="navbars-link @yield('program')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Program <i class="fas fa-caret-down"></i></a>
+              <a href="/program" class="navbars-link @yield('program') dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Program </a>
               <ul class="dropdown-menu">
-                  <li><a href="/">TBC Komunitas</a></li>
-                  <li><a href="#">Sosial</a></li>
-                  <li><a href="#">Kemanusiaan</a></li>
-                  <li><a href="#">Kesehatan</a></li>
+                  <li><a href="/artikel-komunitas">TBC Komunitas</a></li>
+                  <li><a href="/artikel-sosial">Sosial</a></li>
+                  <li><a href="/artikel-keagamaan">{{$keagamaan->title}}</a></li>
+                  <li><a href="/artikel-kemanusiaan">{{$kemanusiaan->title}}</a></li>
                   <li><a href="#">MSIB</a></li>
               </ul>
               </li>
 
               <li class="dropdown">
-                <a href="/" class="navbars-link @yield('kabar')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kabar <i class="fas fa-caret-down"></i></a>
+                <a href="/" class="navbars-link @yield('kabar') dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kabar </a>
                 <ul class="dropdown-menu">
                   <li><a href="/">Berita</a></li>
                   <li><a href="#">Artikel</a></li>
@@ -124,9 +124,29 @@
               </ul>
             </li>
 
+            <li class="dropdown">
+                <a href="/" class="navbars-link @yield('layanan') dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layanan</a>
+                <ul class="dropdown-menu">
+                  <li><a href="/">Kontak</a></li>
+                  <li><a href="#">Karir</a></li>
+                  <li><a href="#">Pengumuman</a></li>
+                  <li><a href="#">Annual Report</a></li>
+              </ul>
+            </li>
+
               <li>
-                <a href="#pustaka" class="navbars-link" data-nav-link>Pustaka</a>
+                
+              <form action="{{ url('/search') }}" method="GET" class="search-form">
+  <div class="search-container">
+    <input type="text" name="query" class="search-input" placeholder="Search...">
+  </div>
+</form>
+
+
+
+
               </li>
+
 
             </ul>
           </div>
@@ -142,7 +162,7 @@
             <span>Profile</span>
           </button>
 
-          <button class="header-bottom-actions-btn" aria-label="Cart">
+          <button  onclick="location.href='https://skrining.merakiasa.com/'" class="header-bottom-actions-btn" aria-label="Cart" >
           <ion-icon name="chatbox-ellipses-outline"></ion-icon>
 
             <span>Report</span>
